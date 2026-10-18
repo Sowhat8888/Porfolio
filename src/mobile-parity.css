@@ -1,0 +1,28 @@
+/* Keep the information shown on small screens consistent with desktop. */
+@media (max-width: 760px) {
+  .video-date {
+    display: block;
+    margin-top: 4px;
+    font-size: 7px;
+  }
+
+  .footer-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 12px;
+  }
+
+  .footer-bottom > span:nth-child(2) {
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: 7px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 500px) {
+  .video-card {
+    display: block;
+  }
+}

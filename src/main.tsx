@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, BarChart3, CalendarDays, Clapperboard, Compass, Mountain, MousePointer2, PenTool, Play, X, type LucideIcon } from 'lucide-react';
 import './style.css';
 import './ux-gallery.css';
+import './mobile-parity.css';
 
 const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
