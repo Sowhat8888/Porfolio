@@ -105,7 +105,7 @@ function Hero() {
   const resetMagnet = () => { if (magnet.current) magnet.current.style.transform = 'translate3d(0, 0, 0)'; };
   return <section className="hero" id="top" onMouseMove={onMove} onMouseLeave={resetMagnet}>
     <motion.nav className="nav-bar" initial={{ opacity: 0, y: -18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-      <a className="nav-logo" href="#top">RONNIE<span>✳</span></a><div className="nav-links"><a href="#about">关于</a><a href="#services">能力</a><a href="#projects">项目</a><a href="#game-edits">游戏剪辑</a></div><ContactButton compact/>
+      <a className="nav-logo" href="#top">RONNIE<span>✳</span></a><div className="nav-links"><a href="#about">关于</a><a href="#services">能力</a><a href="#projects">项目</a><a href="#game-edits">个人兴趣</a></div><ContactButton compact/>
     </motion.nav>
     <div className="hero-title-wrap"><motion.h1 className="hero-heading" initial={{ opacity: 0, y: 55 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.12, ease: [0.25, 0.1, 0.25, 1] }}>RONNIE<span className="hero-star">✳</span></motion.h1><span className="hero-role">BRAND · CONTENT · CAMPAIGNS</span></div>
     <div className="hero-orbit" aria-hidden="true"><div className="orbit-line orbit-line-1"/><div className="orbit-line orbit-line-2"/><div className="orbit-line orbit-line-3"/><div className="orbit-disc"><img src={assetUrl('images/ronnie-3d-head.png')} alt="赵哿仪的 3D 头像"/><span>R</span></div><span className="orbit-label orbit-label-a">CONTENT<br/>× PEOPLE</span><span className="orbit-label orbit-label-b">洞察 · 表达 · 增长</span><span className="orbit-dot dot-a"/><span className="orbit-dot dot-b"/><span className="orbit-dot dot-c"/></div>
